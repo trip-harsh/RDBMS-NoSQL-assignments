@@ -99,15 +99,15 @@ INSERT INTO departments VALUES (4, "HR", 1);
 INSERT INTO departments VALUES (5, "HR", 2);
 
 
-INSERT INTO employees VALUES (1, "Harsh", "Tripathi", "abc@gmail.com", "2023-05-15", 5, 50000, 1, 3);
-INSERT INTO employees VALUES (2, "Saket", "Patel", "bcd@gmail.com", "2022-05-15", 1, 1500000, 1, 3);
-INSERT INTO employees VALUES (3, "Shubh", "Agrawal", "cde@gmail.com", "2021-05-15", 1, 1500000, 2, 3);
-INSERT INTO employees VALUES (4, "Vineet", "Tiwari", "efg@gmail.com", "2022-05-15", 2, 1500000, 1, 3);
-INSERT INTO employees VALUES (5, "Diksha", "Sharma", "hij@gmail.com", "2020-05-15", 1, 1500000, 1, 3);
-INSERT INTO employees VALUES (6, "Sourabh", "Verma", "klm@gmail.com", "2022-06-15", 4, 1500000, 1, 3);
-INSERT INTO employees VALUES (7, "Priya", "Patel", "nop@gmail.com", "2021-03-15", 3, 1500000, 1, 3);
-INSERT INTO employees VALUES (8, "Somya", "Jain", "qrs@gmail.com", "2020-04-15", 2, 1500000, 1, 3);
-INSERT INTO employees VALUES (9, "Palak", "Yadav", "tuv@gmail.com", "2022-05-15", 1, 1500000, 1, 3);
+INSERT INTO employees VALUES (1, "Harsh", "Tripathi", "abc@gmail.com", "2023-05-15", 5, 70000, 1, 3);
+INSERT INTO employees VALUES (2, "Saket", "Patel", "bcd@gmail.com", "2022-05-15", 1, 40000, 1, 3);
+INSERT INTO employees VALUES (3, "Shubh", "Agrawal", "cde@gmail.com", "2021-05-15", 1, 55000, 2, 3);
+INSERT INTO employees VALUES (4, "Vineet", "Tiwari", "efg@gmail.com", "2022-05-15", 2, 45000, 1, 3);
+INSERT INTO employees VALUES (5, "Diksha", "Sharma", "hij@gmail.com", "2020-05-15", 1, 43000, 1, 3);
+INSERT INTO employees VALUES (6, "Sourabh", "Verma", "klm@gmail.com", "2022-06-15", 4, 34000, 1, 4);
+INSERT INTO employees VALUES (7, "Priya", "Patel", "nop@gmail.com", "2021-03-15", 3, 35000, 1, 4);
+INSERT INTO employees VALUES (8, "Somya", "Jain", "qrs@gmail.com", "2020-04-15", 2, 45000, 1, 4);
+INSERT INTO employees VALUES (9, "Palak", "Yadav", "tuv@gmail.com", "2022-05-15", 1, 34000, 1, 2);
 INSERT INTO employees VALUES (10, "Lokesh", "Chaudary", "wxy@gmail.com", "2021-08-15", 4, 1500000, 1, 3);
 
 
@@ -130,3 +130,5 @@ ALTER TABLE locations RENAME postal_code TO pincode;
 
 -- Question 4:-
 -- Kept the constrints in question 1 already.
+
+
