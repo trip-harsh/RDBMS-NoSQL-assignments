@@ -56,3 +56,36 @@ WHERE j.job_title LIKE '%Manager%';
 
 --Q8
 
+ALTER TABLE
+   Dependents
+ADD
+   COLUMN city VARCHAR(255);
+
+SELECT
+   e.employee_id,
+   e.first_name,
+   e.last_name,
+   d.department_name,
+   l.city,
+   e.salary,
+   j.job_title
+FROM
+   Employees e
+   JOIN Departments d ON e.department_id = d.department_id
+   JOIN Locations l ON d.location_id = l.location_id
+   JOIN Dependents de ON e.employee_id = de.employee_id
+   JOIN Jobs j ON e.job_id = j.job_id
+WHERE
+   e.hire_date > CURRENT_DATE - INTERVAL 3 YEAR
+   AND de.city <> l.city
+   AND e.salary > (
+      SELECT
+         AVG(salary)
+      FROM
+         Employees
+      WHERE
+         job_id = Jobs.job_id
+   )
+   AND Jobs.job_title LIKE '%Director%'
+ORDER BY
+   d.department_name;
