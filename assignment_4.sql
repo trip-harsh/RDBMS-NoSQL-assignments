@@ -84,8 +84,8 @@ WHERE
       FROM
          Employees
       WHERE
-         job_id = Jobs.job_id
+         job_id = j.job_id
    )
-   AND Jobs.job_title LIKE '%Director%'
+   AND j.job_title LIKE '%Director%'
 ORDER BY
    d.department_name;
